@@ -40,8 +40,11 @@ function generatePlaylist(guardians, songs) {
     // Use the map() function to create playlists for each Guardian
     // Your code here
     const playlists = Object.entries(guardians).map(([guardian, preferredGenre]) => {
-        //
+
+        // Filter songs array to include only songs with the preferred genre
         const songOfPrefferedGenre = songs.filter(song => song.genre === preferredGenre);
+
+        // Return an object containing guardian's name and their playlist
         return {guardian, songOfPrefferedGenre};
     });
 
@@ -52,25 +55,31 @@ function generatePlaylist(guardians, songs) {
 // Call generatePlaylist and display the playlists for each Guardian
 const playlists = generatePlaylist(guardians, songs);
 
+// Create a variable by getting the container element from the DOM
 const playlistDesign = document.getElementById("playlists");
 
+//Loop that goes through each playlist
 playlists.forEach(({guardian , songOfPrefferedGenre}) => {
     const playlistElement = document.createElement("div");
     playlistElement.classList.add("playlist");
 
+    //Guardian name as heading
     const heading = document.createElement("h2");
     heading.textContent = `${guardian}'s Playlist:`;
     playlistElement.appendChild(heading);
 
+    //Loop that goes through each song
     songOfPrefferedGenre.forEach((song) => {
         const songElement = document.createElement("div");
         songElement.classList.add("song");
 
+        //Song Title 
         const songTitle = document.createElement("span");
         songTitle.textContent = song.title;
         songTitle.classList.add("song-title");
         songElement.appendChild(songTitle);
 
+        //Song Artist
         const songArtist = document.createElement("span");
         songArtist.textContent = ` - ${song.artist}`;
         songElement.appendChild(songArtist);
