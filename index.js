@@ -12,16 +12,16 @@ const songs = [
     { title: "I'm Not in Love", artist: "10cc", genre: "Pop" },
     { title: "Fooled Around and Fell in Love", artist: "Elvin Bishop", genre: "Rock" },
     // Feel free to add even more songs
-    { title: "Imithandazo", artist: "Kabza De Small", genre: "Amapiano" },
+    // { title: "Imithandazo", artist: "Kabza De Small", genre: "Amapiano" },
     { title: "Funk 55", artist: "Shakes & Les", genre: "Amapiano" },
     { title: "Masithokoze", artist: "DJ Stokie", genre: "Amapiano" },
     { title: "Bawo Vula", artist: "Sfarzo", genre: "Amapiano" },
     { title: "The Biggest Part of Me", artist: "Brian McKnight", genre: "R&B" },
-    { title: "All For Me", artist: "Mariah the Scientist", genre: "R&B" },
+    // { title: "All For Me", artist: "Mariah the Scientist", genre: "R&B" },
     { title: "Gone Girl", artist: "Obongjayar", genre: "Afrobeats" },
     { title: "Soke", artist: "Burna Boy", genre: "Afrobeats" },
-    { title: "Law of Attraction", artist: "Dave", genre: "Afrobeats" },
-    { title: "Ashawo", artist: "Flavour", genre: "Afrobeats" }
+    // { title: "Law of Attraction", artist: "Dave", genre: "Afrobeats" },
+    // { title: "Ashawo", artist: "Flavour", genre: "Afrobeats" }
 ];
 
 
